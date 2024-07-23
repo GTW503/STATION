@@ -1,0 +1,300 @@
+/* Ajouter une police Google pour un style plus élégant */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('/'); /* Only background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-form:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h1 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.forgot-password {
+  background: none;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.forgot-password:hover {
+  color: #0056b3;
+}
+/* Login.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: background-animation 10s infinite alternate;
+}
+
+@keyframes background-animation {
+  0% { background-color: #f7f9fc; }
+  100% { background-color: #e0f7fa; }
+}
+
+.signup-container {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  animation: container-animation 1.5s ease-in-out;
+}
+
+@keyframes container-animation {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background-color: #ff4a42;
+  transform: translateY(-3px);
+}
+/* Login.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  animation: container-animation 1.5s ease-in-out;
+}
+
+@keyframes container-animation {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  background-color: #ff4a42;
+  transform: translateY(-3px);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot-password,
+.sign-up {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.forgot-password:hover,
+.sign-up:hover {
+  background-color: #fff;
+  color: #764ba2;
+}

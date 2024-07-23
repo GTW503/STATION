@@ -1,0 +1,193 @@
+/* Ajouter une police Google pour un style plus élégant */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  overflow-y: auto;
+  transition: width 0.3s;
+}
+
+.sidebar-header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(45deg, #4a4a4a, #333);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.sidebar-header p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav ul li {
+  padding: 15px 20px;
+  transition: background 0.3s;
+}
+
+.sidebar-nav ul li:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+.sidebar-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-nav ul li a svg {
+  margin-right: 10px;
+}
+
+.submenu {
+  background-color: #444;
+  animation: fadeIn 0.3s;
+}
+
+.submenu li {
+  padding: 10px 40px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f4f4f9;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.header:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right span {
+  margin-left: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.notifications {
+  margin-left: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.widgets {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.widget {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px); /* Pour trois widgets par ligne avec un espace de 20px */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.widget:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.widget-blue {
+  border-left: 5px solid #42a5f5;
+}
+
+.widget-orange {
+  border-left: 5px solid #ffa726;
+}
+
+.widget-yellow {
+  border-left: 5px solid #ffeb3b;
+}
+
+.widget h3 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.widget p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #777;
+}
+
+.widget button {
+  background-color: #42a5f5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.widget button:hover {
+  background-color: #1e88e5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
